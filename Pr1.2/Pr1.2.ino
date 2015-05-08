@@ -1,191 +1,121 @@
-const int led0 = 3;          
-const int led1 = 5;          
-const int led2 = 6;          
-const int led3 = 9;          
-const int led4 = 10;         
-const int led5 = 11;         
-int velocitat = 500;         
+const int col1 = 10;
+const int col2 = 9;
+const int col3 = 8;
+const int col4 = 7;
+const int col5 = 6;
+const int col6 = 5;
+const int col7 = 4;
+const int col8 = 3;
+const int col9 = 2;
+const int niv1 = 11;
+const int niv2 = 12;
+const int niv3 = 13;
+
+int pausa = 200;   
 
 void setup()
 {
-  pinMode(led0, OUTPUT);     
-  pinMode(led1, OUTPUT);     
-  pinMode(led2, OUTPUT);     
-  pinMode(led3, OUTPUT);     
-  pinMode(led4, OUTPUT);     
-  pinMode(led5, OUTPUT);     
+  pinMode(col1, OUTPUT);
+  pinMode(col2, OUTPUT);
+  pinMode(col3, OUTPUT);
+  pinMode(col4, OUTPUT);
+  pinMode(col5, OUTPUT);
+  pinMode(col6, OUTPUT);
+  pinMode(col7, OUTPUT);
+  pinMode(col8, OUTPUT);
+  pinMode(col9, OUTPUT);
+  pinMode(niv1, OUTPUT);
+  pinMode(niv2, OUTPUT);
+  pinMode(niv3, OUTPUT);
 }
 
 void loop()
 {
-  analogWrite(led0, 0);      
-  analogWrite(led1, 0);      
-  analogWrite(led2, 0);     
-  analogWrite(led3, 0);      
-  analogWrite(led4, 0);     
-  analogWrite(led5, 0);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 20);      
-  analogWrite(led1, 0);      
-  analogWrite(led2, 0);     
-  analogWrite(led3, 0);      
-  analogWrite(led4, 0);     
-  analogWrite(led5, 0);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 40);      
-  analogWrite(led1, 20);      
-  analogWrite(led2, 0);     
-  analogWrite(led3, 0);      
-  analogWrite(led4, 0);     
-  analogWrite(led5, 0);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 60);      
-  analogWrite(led1, 40);      
-  analogWrite(led2, 20);     
-  analogWrite(led3, 0);      
-  analogWrite(led4, 0);     
-  analogWrite(led5, 0);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 80);      
-  analogWrite(led1, 60);      
-  analogWrite(led2, 40);     
-  analogWrite(led3, 20);      
-  analogWrite(led4, 0);     
-  analogWrite(led5, 0);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 100);      
-  analogWrite(led1, 80);      
-  analogWrite(led2, 60);     
-  analogWrite(led3, 40);      
-  analogWrite(led4, 20);     
-  analogWrite(led5, 0);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 120);      
-  analogWrite(led1, 100);      
-  analogWrite(led2, 80);     
-  analogWrite(led3, 60);      
-  analogWrite(led4, 40);     
-  analogWrite(led5, 20);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 140);      
-  analogWrite(led1, 120);      
-  analogWrite(led2, 100);     
-  analogWrite(led3, 80);      
-  analogWrite(led4, 60);     
-  analogWrite(led5, 40);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 160);      
-  analogWrite(led1, 140);      
-  analogWrite(led2, 120);     
-  analogWrite(led3, 100);      
-  analogWrite(led4, 80);     
-  analogWrite(led5, 60);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 180);      
-  analogWrite(led1, 160);      
-  analogWrite(led2, 140);     
-  analogWrite(led3, 120);      
-  analogWrite(led4, 100);     
-  analogWrite(led5, 80);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 200);      
-  analogWrite(led1, 180);      
-  analogWrite(led2, 160);     
-  analogWrite(led3, 140);      
-  analogWrite(led4, 120);     
-  analogWrite(led5, 100);
-  
-  delay(velocitat);           
-          
-  analogWrite(led0, 220);      
-  analogWrite(led1, 200);      
-  analogWrite(led2, 180);     
-  analogWrite(led3, 160);      
-  analogWrite(led4, 140);     
-  analogWrite(led5, 120);
-  
-  delay(velocitat);
-  
-  analogWrite(led0, 240);      
-  analogWrite(led1, 220);      
-  analogWrite(led2, 200);     
-  analogWrite(led3, 180);      
-  analogWrite(led4, 160);     
-  analogWrite(led5, 140);
-  
-  delay(velocitat);
-  
-  analogWrite(led0, 255);      
-  analogWrite(led1, 240);      
-  analogWrite(led2, 220);     
-  analogWrite(led3, 200);      
-  analogWrite(led4, 180);     
-  analogWrite(led5, 160);
-  
-  delay(velocitat);
-  
-  analogWrite(led0, 255);      
-  analogWrite(led1, 255);      
-  analogWrite(led2, 240);     
-  analogWrite(led3, 220);      
-  analogWrite(led4, 200);     
-  analogWrite(led5, 180);
-  
-  delay(velocitat);
-  
-  analogWrite(led0, 255);      
-  analogWrite(led1, 255);      
-  analogWrite(led2, 255);     
-  analogWrite(led3, 240);      
-  analogWrite(led4, 220);     
-  analogWrite(led5, 200);
-  
-  delay(velocitat);
-  
-  analogWrite(led0, 255);      
-  analogWrite(led1, 255);      
-  analogWrite(led2, 255);     
-  analogWrite(led3, 255);      
-  analogWrite(led4, 240);     
-  analogWrite(led5, 220);     
-
-  delay(velocitat);           
-  
-  analogWrite(led0, 255);      
-  analogWrite(led1, 255);      
-  analogWrite(led2, 255);     
-  analogWrite(led3, 255);      
-  analogWrite(led4, 255);     
-  analogWrite(led5, 240);     
-
-  delay(velocitat);
-  
-  analogWrite(led0, 255);      
-  analogWrite(led1, 255);      
-  analogWrite(led2, 255);     
-  analogWrite(led3, 255);      
-  analogWrite(led4, 255);     
-  analogWrite(led5, 255);     
-
-  delay(velocitat);             
+  digitalWrite(niv1, HIGH);  
+  digitalWrite(col1, HIGH);
+  delay(pausa);
+  digitalWrite(col1, LOW);
+  digitalWrite(col2, HIGH);
+  delay(pausa);
+  digitalWrite(col2, LOW);
+  digitalWrite(col3, HIGH);
+  delay(pausa);
+  digitalWrite(col3, LOW);
+  digitalWrite(col4, HIGH);
+  delay(pausa);
+  digitalWrite(col4, LOW);
+  digitalWrite(col5, HIGH);
+  delay(pausa);
+  digitalWrite(col5, LOW);
+  digitalWrite(col6, HIGH);
+  delay(pausa);
+  digitalWrite(col6, LOW);
+  digitalWrite(col7, HIGH);
+  delay(pausa);
+  digitalWrite(col7, LOW);
+  digitalWrite(col8, HIGH);
+  delay(pausa);
+  digitalWrite(col8, LOW);
+  digitalWrite(col9, HIGH);
+  delay(pausa);
+  digitalWrite(col9, LOW);
+  digitalWrite(niv1, LOW);
+  digitalWrite(niv2, HIGH);  
+  digitalWrite(col1, HIGH);
+  delay(pausa);
+  digitalWrite(col1, LOW);
+  digitalWrite(col2, HIGH);
+  delay(pausa);
+  digitalWrite(col2, LOW);
+  digitalWrite(col3, HIGH);
+  delay(pausa);
+  digitalWrite(col3, LOW);
+  digitalWrite(col4, HIGH);
+  delay(pausa);
+  digitalWrite(col4, LOW);
+  digitalWrite(col5, HIGH);
+  delay(pausa);
+  digitalWrite(col5, LOW);
+  digitalWrite(col6, HIGH);
+  delay(pausa);
+  digitalWrite(col6, LOW);
+  digitalWrite(col7, HIGH);
+  delay(pausa);
+  digitalWrite(col7, LOW);
+  digitalWrite(col8, HIGH);
+  delay(pausa);
+  digitalWrite(col8, LOW);
+  digitalWrite(col9, HIGH);
+  delay(pausa);
+  digitalWrite(col9, LOW);
+  digitalWrite(niv2, LOW);
+  digitalWrite(niv3, HIGH);  
+  digitalWrite(col1, HIGH);
+  delay(pausa);
+  digitalWrite(col1, LOW);
+  digitalWrite(col2, HIGH);
+  delay(pausa);
+  digitalWrite(col2, LOW);
+  digitalWrite(col3, HIGH);
+  delay(pausa);
+  digitalWrite(col3, LOW);
+  digitalWrite(col4, HIGH);
+  delay(pausa);
+  digitalWrite(col4, LOW);
+  digitalWrite(col5, HIGH);
+  delay(pausa);
+  digitalWrite(col5, LOW);
+  digitalWrite(col6, HIGH);
+  delay(pausa);
+  digitalWrite(col6, LOW);
+  digitalWrite(col7, HIGH);
+  delay(pausa);
+  digitalWrite(col7, LOW);
+  digitalWrite(col8, HIGH);
+  delay(pausa);
+  digitalWrite(col8, LOW);
+  digitalWrite(col9, HIGH);
+  delay(pausa);
+  digitalWrite(col9, LOW);
+  digitalWrite(niv3, LOW);
 }
